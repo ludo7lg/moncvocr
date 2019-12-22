@@ -1,0 +1,41 @@
+body{
+    color:black;
+    background-color:white;
+    background-size: cover;
+    background:#ffffff url("../images/underwater.jpg");
+    width: 100%;
+}
+
+p{
+	text-align: center;
+	color: blue;
+}
+
+h1{
+	text-align: center;
+	color: #07C;
+	text-shadow: 1px 1px 15px black;
+
+}
+h2 {
+	color: grey;
+	text-shadow: 1px 1px 15px black;
+	text-decoration: underline overline #ff8028;
+}
+
+h3{
+	text-color: grey ;
+	text-shadow: 2px 2px 6px black;
+}
+.blink{
+	text-decoration: blink;
+}
+
+.devise{
+	border-width: 2px;
+	border-style: solid;
+	border-right-color: #07C;
+	border-left-color: #09C;
+	border-top-color: #05C;
+	border-bottom-color: #03C;
+}

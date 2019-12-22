@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cv Ludovic OCR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body> 
+        
+        <div><h1><p class="blink">Ludovic Garcia</p></h1></div>
+
+       <!-- <p><img src="images/underwater" alt="sous l'eau"/>-->
+            <div id="div_horloge"></div>
+        <script type="text/javascript">
+            window.onload=function() {
+                horloge('div_horloge');
+            };
+            function horloge(el) {
+                if(typeof el=="string") { el = document.getElementById(el); }
+                function actualiser() {
+                    var date = new Date();
+                    var str = date.getHours();
+                    str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+                    str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+                    el.innerHTML = str;
+                }
+                actualiser();
+                setInterval(actualiser,1000);
+            }
+        </script>
+            
+            <a href="img/moi_cv_ocr.jpg"><img src="img/moi_ocr_mini.jpg" height="100" width="130" alt="mon portrait" title=" il faut que je me rase" /></a>
+        </p>
+        <p> <span class="devise">  Savoir rêver tout en restant dans la réalité </span></p>
+        
+        <h3>Mon expérience</h3>
+        <ul>
+            <li><strong>De 1988 à 1996</strong> : J'ai travaillé dans la restauration, la construction en batiment</br></li>
+            <li><strong>De 1996 à 2005</strong> : Compositeur de musique de film, publicité pour les agences "Louis XIV, Love Palace, DDB"</br>
+                J'ai participé sur plusieurs albums de Monsieur Nicolas Buffet et Monsieur Lawrence Collins
+                </li>
+                <li><strong>De 2005 à 2017</strong> : Retour dans la restauration, comme responsable de deux établisserments</li>
+        </ul>
+        <h3>Mes compétences en</h3>
+        <h2>Maintenance</h2>
+        <ul>
+            <li>Démonter un pc en toute sécurité</li>
+            <li>Nettoyer les composants</li>
+            <li>Changer les composants défectueux</li>
+            <li>Installer un système d'exploitation</li>
+            <li>HTML5/CSS</li>
+            <li>Java</li>
+        </ul>
+        <h2>MAO</h2>
+        <ul>
+            <li>Logic pro</li>
+            <li>Pro tools</li>
+        </ul>
+        <h2>Développement informatique</h2>
+        <ul>
+            <li>HTML5/CSS, Java, Git/GitHub</li>
+            <li>nstallation logiciel de programmation (Eclipse, NetBeans)</li>
+            <li>Débuter un projet en html/css, java, javaEE, Android</li>
+            <li>Installation d’une machine virtuelle Linux, Windows, Windows serve</li>
+            <li></li>
+        </ul>
+        <h3>Mes formations</h3>
+        <ul>
+            <li>2018: le Greta, formation en maintenance informatique et réseau </li>
+            <li>2019: le Greta, formation Developpement web  </li>
+            <li>Open Class Room afin de poursuivre ma formation</li>
+        </ul>
+        <p>Je me suis dirigé vers Open Class Room car les formations que j'ai suivi était </br>
+            trop courtes. Je me suis lancé dans une reconvertion proféssionnelle,</br>
+            et j'ai bon espoir d'y parvenir par le biais d'OCR
+        </p></div>
+    </body>
+</html>
